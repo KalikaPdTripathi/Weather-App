@@ -1,116 +1,107 @@
-🌤️ Weather Forecast App
+# 🌤️ Weather Forecast App
 
-A sleek, modern, and responsive weather application built using React + Vite.
+A modern and responsive weather application built with **React +
+Vite**.\
+Features dynamic backgrounds, real-time weather data, and a clean
+glass-morphism UI.
 
-<p align="center"> <img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" /> <img src="https://img.shields.io/badge/Vite-Build%20Tool-purple?logo=vite&logoColor=white" /> <img src="https://img.shields.io/badge/OpenWeatherMap-API-orange?logo=cloudflare&logoColor=white" /> <img src="https://img.shields.io/badge/Live-Demo-success?logo=vercel" /> <img src="https://img.shields.io/badge/License-MIT-lightgrey" /> </p>
+## 🔗 Live Demo
 
-🌐 Live Demo
+https://weather-app-five-phi-82.vercel.app/
 
-🚀 Try it here: https://weather-app-five-phi-82.vercel.app/
+## ✨ Features
 
-📸 Screenshots
-🌤️ Home Screen
-<p align="center"> <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&w=1200" width="700" /> </p>
+-   Auto-detect current location\
+-   Search weather by city\
+-   Real-time data from OpenWeatherMap\
+-   Dynamic backgrounds based on weather\
+-   Responsive UI (mobile-friendly)\
+-   Sunrise & sunset times\
+-   Clean glass-morphism design
 
-✨ Features
+## 🖥️ Tech Stack
 
-🌍 Auto Location Weather (Geolocation API)
+  Category     Technology
+  ------------ ---------------------
+  Frontend     React 18
+  Build Tool   Vite
+  API          OpenWeatherMap API
+  Styling      CSS3, Glassmorphism
+  Deployment   Vercel / Netlify
 
-🔍 City Search with Autocomplete (optional)
+## 📁 Project Structure
 
-🎨 Dynamic Weather-Based Backgrounds
+    weather-app/
+    ├── src/
+    │   ├── components/
+    │   │   ├── Weather.jsx
+    │   │   └── Weather.css
+    │   ├── assets/
+    │   │   └── search.png
+    │   └── main.jsx
+    ├── public/
+    ├── .env
+    ├── package.json
+    └── vite.config.js
 
-⛅ Animated Weather Icons
+## ⚙️ Installation & Setup
 
-📱 Responsive UI for all devices
+### 1. Clone the repository
 
-🌡️ Detailed Weather Stats
-Temperature • Humidity • Wind Speed • Pressure • Visibility
-
-🌅 Sunrise & Sunset times
-
-🎭 Glassmorphism UI + Soft Animations
-
-🛠 Tech Stack
-| Category   | Technology                   |
-| ---------- | ---------------------------- |
-| Frontend   | React 18, Vite               |
-| Styling    | CSS3, Flexbox, Glassmorphism |
-| API        | OpenWeatherMap API           |
-| Icons      | OpenWeather Icons, Emojis    |
-| Deployment | Vercel / Netlify             |
-
-📁 Project Structure
-weather-app/
-├── src/
-│   ├── components/
-│   │   ├── Weather.jsx
-│   │   └── Weather.css
-│   ├── assets/
-│   │   └── search.png
-│   └── main.jsx
-├── public/
-├── .env
-├── package.json
-└── vite.config.js
-
-🚀 Installation & Setup
-1. Clone the repository
+``` bash
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
+```
 
-1. Clone the repository
-git clone https://github.com/your-username/weather-app.git
-cd weather-app
+### 2. Install dependencies
 
-3. Add environment variables
+``` bash
+npm install
+```
 
-Create .env in root:
+### 3. Create a `.env` file
 
-VITE_API_ID=your_openweathermap_api_key
+    VITE_API_ID=your_openweathermap_api_key
 
-4. Start development server
+### 4. Run development server
+
+``` bash
 npm run dev
+```
 
-5. Build for production
+### 5. Build for production
+
+``` bash
 npm run build
+```
 
-🌐 API Reference
-Get weather by city
-https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}
+## 🌐 API Reference
 
-Get weather by coordinates
-https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API_KEY}
+### Get weather by city
 
-Weather Icons
-https://openweathermap.org/img/wn/{icon}@2x.png
+    https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}
 
-🎨 Dynamic Background Logic
+### Get weather by coordinates
 
-| Condition | Background      | Icon Codes |
-| --------- | --------------- | ---------- |
-| ☀️ Clear  | Sunny day       | 01d, 01n   |
-| ☁️ Cloudy | Cloudy sky      | 02d–04n    |
-| 🌧️ Rainy | Rain cityscape  | 09d–10n    |
-| ⛈️ Storm  | Thunderstorm    | 11d        |
-| ❄️ Snow   | Winter scene    | 13d        |
-| 🌫️ Fog   | Foggy mountains | 50d        |
+    https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API_KEY}
 
-🤝 Contributing
+### Weather Icons
 
-Contributions, issues, and feature ideas are welcome!
-Feel free to open a PR or issue.
+    https://openweathermap.org/img/wn/{icon_code}@2x.png
 
-📝 License
+## 🎨 Dynamic Background Logic
 
-This project is licensed under the MIT License.
+  Condition   Background Style   Icon Codes
+  ----------- ------------------ ------------
+  Clear       Sunny background   01d, 01n
+  Clouds      Cloudy sky         02d--04n
+  Rain        Rainy scene        09d--10n
+  Storm       Thunderstorm       11d
+  Snow        Snow landscape     13d
+  Fog         Foggy view         50d
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 
-OpenWeatherMap — Weather Data
-
-Unsplash — Background Images
-
-React & Vite — Frontend Stack
-
-Inspired by modern weather apps and glassmorphism UI trends
+-   OpenWeatherMap --- Weather data\
+-   Unsplash --- Background images\
+-   React & Vite communities
