@@ -1,79 +1,33 @@
-::: {align="center"}
 # 🌤️ Weather Forecast App
 
-### A premium, modern, and dynamic weather application built with **React + Vite**
+A modern and responsive weather application built with **React +
+Vite**.\
+Features dynamic backgrounds, real-time weather data, and a clean
+glass-morphism UI.
 
-```{=html}
-<p>
-```
-`<img src="https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/Vite-Build%20Tool-purple?logo=vite&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/OpenWeatherMap-API-orange?logo=cloudflare&logoColor=white" />`{=html}
-`<img src="https://img.shields.io/badge/Deployment-Vercel-black?logo=vercel" />`{=html}
-`<img src="https://img.shields.io/badge/License-MIT-lightgrey" />`{=html}
-```{=html}
-</p>
-```
-:::
+## 🔗 Live Demo
 
-------------------------------------------------------------------------
-
-## 🚀 Live Demo
-
-👉 **https://weather-app-five-phi-82.vercel.app/**
-
-------------------------------------------------------------------------
-
-## 📸 Screenshots
-
-### 🌤️ Home Screen
-
-```{=html}
-<p align="center">
-```
-`<img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&w=1200" width="700" />`{=html}
-```{=html}
-</p>
-```
-### 📱 Mobile View
-
-(Add your mobile screenshot here)
-
-    ![Mobile View](path-to-mobile-screenshot.png)
-
-### 🎞️ Demo GIF
-
-(Optional -- Add your demo GIF)
-
-    ![Weather App Demo](path-to-demo.gif)
-
-------------------------------------------------------------------------
+https://weather-app-five-phi-82.vercel.app/
 
 ## ✨ Features
 
--   🌍 Auto-detect current location\
--   🔍 Search any city globally\
--   ⚡ Real-time weather updates\
--   🎨 Dynamic backgrounds based on weather\
--   📱 Fully responsive design\
--   🌡️ Detailed metrics: Temp, Humidity, Wind, Pressure, Visibility\
--   🌅 Sunrise & Sunset times\
--   🎭 Glassmorphism UI with smooth animations
-
-------------------------------------------------------------------------
+-   Auto-detect current location\
+-   Search weather by city\
+-   Real-time data from OpenWeatherMap\
+-   Dynamic backgrounds based on weather\
+-   Responsive UI (mobile-friendly)\
+-   Sunrise & sunset times\
+-   Clean glass-morphism design
 
 ## 🖥️ Tech Stack
 
   Category     Technology
-  ------------ ---------------------------
+  ------------ ---------------------
   Frontend     React 18
   Build Tool   Vite
   API          OpenWeatherMap API
   Styling      CSS3, Glassmorphism
-  Icons        OpenWeather Icons, Emojis
   Deployment   Vercel / Netlify
-
-------------------------------------------------------------------------
 
 ## 📁 Project Structure
 
@@ -90,91 +44,64 @@
     ├── package.json
     └── vite.config.js
 
-------------------------------------------------------------------------
-
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1. Clone the repository
 
 ``` bash
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
 ```
 
-### 2️⃣ Install dependencies
+### 2. Install dependencies
 
 ``` bash
 npm install
 ```
 
-### 3️⃣ Add environment variables
-
-Create `.env` in the root:
+### 3. Create a `.env` file
 
     VITE_API_ID=your_openweathermap_api_key
 
-### 4️⃣ Start development server
+### 4. Run development server
 
 ``` bash
 npm run dev
 ```
 
-### 5️⃣ Build for production
+### 5. Build for production
 
 ``` bash
 npm run build
 ```
 
-------------------------------------------------------------------------
-
 ## 🌐 API Reference
 
-### 🔵 Get weather by city
+### Get weather by city
 
     https://api.openweathermap.org/data/2.5/weather?q={city}&units=metric&appid={API_KEY}
 
-### 🟢 Get weather by coordinates
+### Get weather by coordinates
 
     https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={API_KEY}
 
-### 🟣 Weather Icons
+### Weather Icons
 
     https://openweathermap.org/img/wn/{icon_code}@2x.png
 
-------------------------------------------------------------------------
+## 🎨 Dynamic Background Logic
 
-## 🎨 Dynamic Background Mapping
-
-  Weather Condition   Background   Icon Codes
-  ------------------- ------------ ------------
-  ☀️ Clear            Sunny        01d, 01n
-  ☁️ Clouds           Cloudy       02d--04n
-  🌧️ Rain             Rainy        09d--10n
-  ⛈️ Thunderstorm     Stormy       11d
-  ❄️ Snow             Snow         13d
-  🌫️ Fog              Foggy        50d
-
-------------------------------------------------------------------------
-
-## 🧠 Future Improvements
-
--   Hourly & weekly forecast\
--   Weather alerts\
--   AQI (Air Quality Index)\
--   Save favorite cities\
--   Multi-language support
-
-------------------------------------------------------------------------
+  Condition   Background Style   Icon Codes
+  ----------- ------------------ ------------
+  Clear       Sunny background   01d, 01n
+  Clouds      Cloudy sky         02d--04n
+  Rain        Rainy scene        09d--10n
+  Storm       Thunderstorm       11d
+  Snow        Snow landscape     13d
+  Fog         Foggy view         50d
 
 ## 🙏 Acknowledgments
 
--   Weather data --- **OpenWeatherMap**\
--   Background images --- **Unsplash**\
--   Icons --- **OpenWeatherMap**\
--   Built with ❤️ using **React + Vite**
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
+-   OpenWeatherMap --- Weather data\
+-   Unsplash --- Background images\
+-   React & Vite communities
